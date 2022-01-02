@@ -34,16 +34,16 @@ function Map({searchResults}) {
                     >
                     <p role="img" onClick={()=> setSelectedLocation(result)} aria-label="push-pin" className='cursor-pointer text-2xl animate-bounce'>🏓</p>
                    {selectedLocation.long === result.long ? ( 
-                       <Popup 
-                       onClose={() => setSelectedLocation({})}
-                       closeOnClick={true}
-                       latitude={result.lat}
-                       longitude={result.long}
-                       >
-                       {result.title} 
-                       </Popup>
-                    //  <div className='text-gray-800 bg-gray-100 px-2 py-1 rounded-xl'> {result.title} 
-                    //  </div>
+                    //    <Popup 
+                    //    onClose={() => setSelectedLocation({})}
+                    //    closeOnClick={true}
+                    //    latitude={result.lat}
+                    //    longitude={result.long}
+                    //    >
+                    //    {result.title} 
+                    //    </Popup>
+                     <div className='text-gray-800 bg-gray-100 px-2 py-1 rounded-xl'> {result.title} 
+                     </div>
               
                
                    ): 
